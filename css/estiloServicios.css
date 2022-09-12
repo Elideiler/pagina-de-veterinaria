@@ -1,0 +1,165 @@
+/* estilo de los servicios */
+.imagen-cervicios img{
+
+    /* tamaño de la imagen dinámico */
+    max-width: 90% ;
+
+    /* margen de la parte inferior */
+
+    margin-bottom: 10px;
+
+    /* escala de la imagen */
+    transform: scale(1.1) ;
+
+    /* bordes radius o redondo  */
+    border-radius: 10px;
+    transition: all 05s;
+
+
+}
+
+.imagen-cervicios{
+
+    width: 50%;
+
+    display: flex;
+
+    justify-content: right ;
+    /* poner atrás las imágenes */
+    z-index: -1;
+}
+
+/* efecto de la escala de la imagen */
+.container-servicios:hover .imagen-cervicios img{
+
+    transform: scale(1.15);
+}
+
+
+/* llamado por id */
+#menu-servicios.contenedor-principal {
+
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    /* capas de los elementos */
+    z-index: -1;
+    
+
+    
+        
+}
+
+.slider{
+
+    display: flex;
+
+    /* calculo del tamaño del slider */
+    height: calc(100vh - 80px);
+    
+
+}
+
+.container-servicios{
+    /* flex nuevamente */
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+    /* ajuste de tamaño de pantalla a tipo Movil */
+    flex-basis:100%;
+
+    flex-shrink: 0;
+}
+
+.descriccion-servicios{
+
+    width: 30% ;
+
+
+}
+
+.descriccion-servicios h1{
+    /* tamaño de la letra de títulos h1 */
+    font-size: 4vw;
+
+    /* negrita */
+    font-weight: 600;
+
+    /* convertir el tipo de letra  */
+    text-transform: uppercase;
+}
+
+.descriccion-servicios h2{
+
+    text-transform: lowercase;
+    font-size: 2.2vw;
+    font-weight: 100;
+}
+
+.descriccion-servicios p{
+    /* color del párrafo */
+    color: hwb(37 2% 19%);
+
+    /* agregar cursiva */
+    font-style: italic;
+
+    text-align: center;
+
+}
+
+.btn{
+    /* color del botón */
+    background: #ecb359;
+
+    /* decoración del boton   */
+    text-decoration: none;
+
+    /* mayúscula */
+
+    text-transform: uppercase;
+
+    /* tamaño del boton */
+    font-size: 14px;
+
+    /* color del texto */
+
+    color: #75838b;
+
+    font-weight: 700;
+
+    padding: 15px 30px;
+    /* quitar selección del boton  */
+    outline: none ;
+     
+    /* bord del boton */
+
+    border: 2px solid #ecb359;
+
+    cursor: pointer;
+
+    position: relative;
+
+    top: 20px;
+
+    /* borde del boton o forma */
+    border-radius: 0px 40px 100px 0px;
+
+    transition: all 0.3s;
+
+
+}
+/* efecto de estirar del boton */
+.btn:hover{
+    padding: 15px 45px;
+}
+
+/* flecha del icono del boton */
+.btn span{
+    position: relative;
+    top: 6px;
+    left: 8px; 
+}

@@ -1,0 +1,226 @@
+
+/* variables globales  */
+/* las fuentes y los colores */
+:root{
+
+/* agregar variables para colores */
+    --color--primario: #ecb359;
+    --color--secundario:#fb5353;
+    --color--fondo:#75838b;
+
+    /* variables para fuentes */
+    --tex-default: 'Montserrat'sans-serif;
+
+}
+
+/* Generales de la pagina o formato*/
+
+/* el *es para ajustar todos los elementos */
+*{
+    /* la margen */
+    margin: 0;
+    /* area de la margen o margen interna*/
+    padding: 0;
+    /* formato de los elementos */
+    box-sizing: border-box;
+
+    /* fuentes de texto */
+    font-family: var(--tex-default) 
+
+
+}
+/* por etiquetas */
+a{
+    /* quitar las decoraciones de los enlaces o rall ita de abajo */
+    text-decoration: none;
+}
+
+body{
+    background-color: rgba(175, 125, 207, 0.406);
+}
+
+/* apariencia de degradado */
+body::after,
+body::before{
+    content: "";
+    position: fixed;
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    z-index: -1;
+    filter: blur(150px);
+    opacity: 0.5;
+
+
+}
+/* degradado del fondo */
+body::before{
+    background-color: rgba(238, 238, 238, 0.406);
+    left: 0;
+    bottom: 0;
+    transform: translate(-50%);
+
+}
+
+/* por clases */
+.logo img{
+    /* tamaño del logo */
+    width: 130px;
+    /* margen */
+    padding: 10px;
+    /* propiedad del cursor */
+    cursor: pointer;
+
+}
+
+.menu-principal{
+
+    width: 100%; /* son valores dinámicos */
+    background: rgb(38, 245, 241);
+    /* tamaño de la barra */
+    height: 75px;/* pixel son valores fijos*/   
+    /* propiedad de flex */
+    display: flex;
+     /*agrega un espacio justificado  */
+    justify-content: space-around;
+    
+    /* alinear los elementos  */
+    align-items: center;
+    
+    /* margen interna */
+    padding: 0 30px;
+
+    /* margen de arriba */
+    margin-top: 10px;
+
+}
+/* hijo 1 e hijo2  */
+.menu-bar{
+    /* tamaño dinámico al 100% */
+    width:100%;
+    /* para que sea flexible */
+    display: flex;
+    /* propiedad de espacios entre elementos */
+    justify-content: space-between;
+    
+
+}
+/* hijo1 nav  etiquetas*/
+.menu-bar .enlaces ul li a {
+    /* propiedad tamaño de letra */
+    font-size: 14px;
+
+    /* propiedad cambio a Mayúsculas */
+
+    text-transform: uppercase;
+
+    /* propiedad color texto */ 
+    color:black;
+
+    /*  propiedad de la negrita */
+
+    font-weight: 600;
+
+    /* trancicion de elementos */
+    transition: all 0.9s;
+
+    /* efecto linea de abajo */
+    background: linear-gradient(currentColor,CurrentColor );
+    background-position: 100% 100%; 
+    background-repeat: no-repeat;
+    background-size:0% 2px;
+
+
+
+}
+/* lista de elementos en bloque */
+.menu-bar .enlaces ul li{
+    
+    /* propiedad del display en bloque */
+    display: inline-block;
+    
+    /* darle orden y margen en los enlaces */
+    padding: 0px 10px ;
+    
+
+
+}
+/* pseudo clase = :hover */
+.menu-bar .enlaces ul li a:hover{
+    color:rgb(247, 247, 247);
+
+    /* esto es para la linea de dejo  */
+    background-size: 90% 2px;
+
+}
+/* hijo 2 redes sociales */
+.menu-bar .sociales a{
+    /* propiedad area de los iconos */
+    padding: 0 10px;
+    /* color iconos */
+    color: black;
+    /* suavizar la  trancicion*/
+    transition: all 0.8s;
+
+
+
+}
+/* iconos */
+.menu-bar .sociales a:hover{
+    /* color de iconos */
+    color: rgb(235, 230, 230);
+}
+  
+/* estilos del boton responsive */
+
+.menu-principal i{
+    /* agregar manito */
+    cursor: pointer;
+
+    /* color del boton */
+    color: rgba(175, 125, 207, 0.406) ;
+
+    /* tamaño de letras o  icono */
+    font-size: 40px;
+
+    /* para que el boton flote a la derecha */
+    float: right;
+
+    /* trancicion   o cambio de color*/
+    transition: all 0.5s;
+    /* propiedad display con none */
+    display: none;
+
+
+
+
+}
+
+
+.menu-principal i:hover{
+    color: black;
+
+}
+
+
+
+/* Formulario */
+form{
+	width:100%;
+	padding:16px;
+	border-radius:10px;
+	margin:auto;
+	background-color:#fff;
+}
+
+.form-control {
+    width: 100%;
+	padding:2px 10px;
+	border:1px solid #f6f6f6;
+	border-radius:3px;
+	background-color:#f6f6f6;
+	margin:4px 0;
+	display:inline-block;
+}
+
+

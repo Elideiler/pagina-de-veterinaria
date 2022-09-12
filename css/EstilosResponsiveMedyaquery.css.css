@@ -1,0 +1,145 @@
+@media screen  and (max-width:600px){
+   
+    .menu-principal{
+        /* margen del menu principal */
+        margin-top: 0;
+
+        position: fixed;
+
+        top: 0;
+        
+
+
+
+    }
+
+    .menu-bar{
+        /* tamaño del menu responsivo */
+        width: 100%;
+
+        /* tamaño de la vista */
+        height: 100hv;
+
+        /* color del cuadro del menu */
+        background: rgb(35, 245,241);
+
+        /* posición fija del menu */
+        position: fixed;
+
+        /* justificar contenido */
+        justify-content: space-around;
+
+        /* posición de los elementos del menu bar */
+        align-items: center;
+
+        /* propiedad de dirección */
+        flex-direction: column;
+
+        top: 0; 
+        right: 0;
+        margin-top: 74px;
+
+        /* capa de los elementos  */
+        z-index: 10000;
+
+        /* estilo de borde  */
+        border-radius: 0px 0px 0px 400px;
+
+        /* propiedad transform  al terminar debo de darle 0% */
+
+        transform: translateX( 100%);
+
+
+    }
+
+    
+
+    .menu-bar .enlaces ul li{
+        /* propiedad para los elementos uno debajo del otro */
+        display: block;
+        padding: 20px 10px;
+        /* alineación de texto */
+        text-align: center;
+
+
+        
+    }
+
+    .menu-bar .enlaces ul li a{
+        /* tamaño del texto de los enlaces */
+        font-size: 20px;
+
+    }
+    /* clase para las redes sociales */
+    .sociales samp.material-icons{
+        /* tamaño para los iconos */
+        font-size: 20px ;
+
+        margin-bottom: 200px;
+
+
+
+    }
+
+    
+}
+
+
+
+
+
+/* tamaño tipo o para tabled  */
+
+@media screen and (max-width: 850px){
+
+    .container-servicios{
+
+        flex-direction: column;
+    
+
+    }
+
+    .descriccion-servicios{
+
+        width:  70%;
+        order: 1;
+    }
+
+    .descriccion-servicios .btn{
+
+        padding: 10px 20px;
+
+    }
+ 
+    .descriccion-servicios .btn:hover{
+
+        padding: 10px 30px;
+    }
+
+    /* personalizar tamaño de slider servicio */
+
+    .slider{
+        height: calc(100vh - - 100px);
+    }
+
+    .imagen-servicio{
+        width: 50%;
+    }
+
+    .descriccion-servicios h1{
+        font-size: 7vw;
+    }
+
+
+}
+
+/* mostrar el boton del responsible */
+.menu-principal i{
+    display: block;
+}
+
+.menu-bar.active{
+
+    transform: translateX(0%);
+}
+
